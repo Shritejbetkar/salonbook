@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalonBook | Book Beauty Services</title>
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\dark-mode.css" id="darkModeStyle" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="darkModeToggle">
+        <label for="darkModeToggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="toggle-ball"></span>
+        </label>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-cut"></i>
+                <h1>SalonBook</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#salons">Salons</a></li>
+                    <li><a href="auth/login.html" class="btn btn-outline">Login</a></li>
+                    <li><a href="auth/signup.html" class="btn">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Book Your Perfect Salon Experience</h2>
+                    <p>Discover top-rated salons and book appointments instantly</p>
+                    <div class="cta-buttons">
+                        <a href="#salons" class="btn pulse">Find Salons</a>
+                        <a href="auth/signup.html" class="btn btn-outline">Get Started</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/hero-image.jpg" alt="Salon services">
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Why Choose Us?</h2>
+                <div class="features-grid">
+                    <!-- Features will be added by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <h3>Salon Assistant</h3>
+            <button id="closeChatbot"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages"></div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbotInput" placeholder="How can I help?">
+            <button id="sendChatbotMessage"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button id="openChatbot" class="chatbot-toggle-btn">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <script src="firebase-config.js"></script>
+    <script src="js\dark-mode.js"></script>
+    <script src="js\auth.js"></script>
+    <script src="js\chatbot.js"></script>
+    <script src="js\script.js"></script>
+</body>
+</html>

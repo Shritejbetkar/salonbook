@@ -1,0 +1,41 @@
+/* Dark Mode Variables */
+:root {
+    --dark-bg: #121212;
+    --dark-card: #1e1e1e;
+    --dark-text: #e0e0e0;
+    --dark-border: #333;
+}
+
+.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+.dark-mode header,
+.dark-mode .auth-card,
+.dark-mode .feature-card,
+.dark-mode .chatbot-container {
+    background-color: var(--dark-card) !important;
+    color: var(--dark-text);
+}
+
+.dark-mode input,
+.dark-mode select {
+    background-color: #333;
+    color: var(--dark-text);
+    border-color: var(--dark-border);
+}
+
+.dark-mode .chatbot-input {
+    border-top-color: var(--dark-border);
+}
+
+.dark-mode .bot-message {
+    background-color: #333;
+    color: var(--dark-text);
+}
+
+.dark-mode .auth-divider::before,
+.dark-mode .auth-divider::after {
+    border-color: var(--dark-border);
+}
